@@ -8,6 +8,9 @@ public class Employee {
   private double salary;
   private Date hireDay;
 
+  public static final int NAME_SIZE = 10;
+  public static final int RECORD_SIZE = NAME_SIZE * Character.BYTES + Double.BYTES + 3 * Integer.BYTES;
+
   public Employee(String name, double salary, int year, int month, int day) {
     this.name = name;
     this.salary = salary;
